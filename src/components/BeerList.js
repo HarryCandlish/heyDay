@@ -18,7 +18,7 @@ class BeerList extends Component {
     render() {
         return (
     <div>
-        <h1>Beers</h1>
+        <h1>Pouring Now</h1>
         <ul>
             {this.state.beers.map((beer) => {
                 if (beer.pouring_now === true) {
