@@ -15,13 +15,13 @@ const Navigation = () => (
         <li>Events</li>
       </Link>
       <Link to='/'>
-        <li>Reservations</li>
-      </Link>
-      <Link to='/'>
         <li>Food</li>
       </Link>
       <Link to='/'>
         <li>About</li>
+      </Link>
+      <Link to='/'>
+        <li>Make Reservation</li>
       </Link>
     </ul>
   </div>
