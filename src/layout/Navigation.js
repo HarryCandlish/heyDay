@@ -2,29 +2,31 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
+import navigationStyles from '../modules/navigationStyles.module.scss'
 
-
+var ns = navigationStyles
 
 const Navigation = () => (
-  <div>
-    <ul>
-      <Link to='/'>
+  <nav>
+    <h1 className={ns.title}>Hey Day</h1>
+    <ul className={ns.list}>
+      <Link className={ns.links} to='/'>
         <li>Our Beer</li>
       </Link>
-      <Link to='/'>
+      <Link className={ns.links} to='/'>
         <li>Events</li>
       </Link>
-      <Link to='/'>
+      <Link className={ns.links}to='/'>
         <li>Food</li>
       </Link>
-      <Link to='/'>
+      <Link className={ns.links} to='/'>
         <li>About</li>
       </Link>
-      <Link to='/'>
-        <li>Make Reservation</li>
+      <Link className={ns.links} to='/reservations'>
+        <button>Book a Table</button>
       </Link>
     </ul>
-  </div>
+  </nav>
 );
 
 
