@@ -22,7 +22,7 @@ const Navigation = () => (
       <Link className={ns.links} to='/'>
         <li>About</li>
       </Link>
-      <Link className={ns.links} to='/reservations'>
+      <Link className={ns.tableButton} to='/reservations'>
         <button>Book a Table</button>
       </Link>
     </ul>

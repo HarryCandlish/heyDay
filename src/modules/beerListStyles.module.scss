@@ -1,4 +1,23 @@
+
+.container {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.item {
+    flex-grow: 1;
+    
+
+}
+
 .beers {
-    width: 100px;
-    height: 100px;
+    width: 220px;
+    height: 220px;
+}
+
+.title {
+    text-align: center;
 }

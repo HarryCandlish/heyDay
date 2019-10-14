@@ -9,22 +9,26 @@ class BeerList extends Component {
             beers: []
         };
     }
-    
-    componentDidMount() {
+
+        componentDidMount() {
         fetch("/api/beers")
         .then(res => res.json())
         .then(beers => this.setState({beers}, () => console.log("beers", beers)))
     }
-    render() {
+
+     render() {
+
+        var bls = beerListStyles
+
         return (
     <div>
-        <h1>Pouring Now</h1>
-        <ul>
+        <h1 className={bls.title}>Now Pouring</h1>
+        <ul className={bls.container}>
             {this.state.beers.map((beer) => {
                 if (beer.pouring_now === true) {
                 return (
-                    <li key={beer.id}>
-                    <img alt='beers'className={beerListStyles.beers} src={beer.image}/>
+                    <li className={bls.item} key={beer.id}>
+                    <img alt='beers'className={bls.beers} src={beer.image}/>
                 </li>)
             }})}
         </ul>
