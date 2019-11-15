@@ -25,6 +25,7 @@ class ReservationForm extends Component {
             
 
     render() {
+        let { name, date, phone } = this.state
         return (
     <div>
        <h1>Reservation Form</h1>
@@ -33,7 +34,7 @@ class ReservationForm extends Component {
            type="text"
            name="name"
            placeholder="Name"
-           value={this.state.name}
+           value={name}
            onChange={this.handleChange} />
               <input
            type="text"

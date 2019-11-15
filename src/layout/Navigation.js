@@ -2,31 +2,31 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-import navigationStyles from '../modules/navigationStyles.module.scss'
-
-var ns = navigationStyles
+import styles from '../modules/navigationStyles.module.scss'
 
 const Navigation = () => (
+  <div>
   <nav>
-    <h1 className={ns.title}>Hey Day</h1>
-    <ul className={ns.list}>
-      <Link className={ns.links} to='/'>
-        <li>Our Beer</li>
+    <h1 className={styles.title}>Hey Day</h1>
+    <ul className={styles.list}>
+      <Link className={styles.links} to='/'>
+        <li><h4>Our Beer</h4></li>
       </Link>
-      <Link className={ns.links} to='/'>
-        <li>Events</li>
+      <Link className={styles.links} to='/'>
+       <li><h4>Events</h4></li>
       </Link>
-      <Link className={ns.links}to='/'>
-        <li>Food</li>
+      <Link className={styles.links}to='/'>
+        <li><h4>Food</h4></li>
       </Link>
-      <Link className={ns.links} to='/'>
-        <li>About</li>
+      <Link className={styles.links} to='/'>
+       <li><h4>About</h4></li>
       </Link>
-      <Link className={ns.tableButton} to='/reservations'>
+      {/* <Link className={styles.tableButton} to='/reservations'>
         <button>Book a Table</button>
-      </Link>
+      </Link> */}
     </ul>
   </nav>
+  </div>
 );
 
 

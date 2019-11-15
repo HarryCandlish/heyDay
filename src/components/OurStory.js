@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 
-import ourStoryStyles from '../modules/ourStoryStyles.module.scss'
+import styles from '../modules/ourStoryStyles.module.scss'
 
 class OurStory extends Component {
      render() {
+
+
           return (
-    <div>
-        <h1>What we're about and how we got here.</h1>
+    <div className={styles.container}>
     </div>
 )
 }
